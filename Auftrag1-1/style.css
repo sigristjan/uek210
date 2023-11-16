@@ -1,0 +1,52 @@
+/* Reset für die Standards */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grundlegende Stilierung */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+/* Stil für unterschiedliche Cloudarten */
+ul li:before {
+    content: "•";
+    margin-right: 5px;
+}
+
+/* Stil für einzelne Cloudlösungen */
+ul:last-child {
+    margin-bottom: 0;
+}
+
+/* Stil für den Absatz nach Cloudlösungen */
+ul:last-child + p {
+    margin-top: 0;
+}
